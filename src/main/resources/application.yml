@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: oauth2-restclient-demo
+  security:
+    oauth2:
+      client:
+        registration:
+          spotify:
+            client-id: ${CLIENT_ID}
+            client-secret: ${CLIENT_SECRET}
+            authorization-grant-type: client_credentials
+        provider:
+          spotify:
+            tokenUri: https://accounts.spotify.com/api/token
