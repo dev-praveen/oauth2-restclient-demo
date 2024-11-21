@@ -12,3 +12,12 @@ spring:
         provider:
           spotify:
             tokenUri: https://accounts.spotify.com/api/token
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_db
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
