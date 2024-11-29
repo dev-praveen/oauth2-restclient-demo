@@ -32,9 +32,7 @@ public class RestClientInterceptor implements ClientHttpRequestInterceptor {
 
   @Override
   public @NonNull ClientHttpResponse intercept(
-      @NonNull HttpRequest request,
-      @NonNull byte[] body,
-      @NonNull ClientHttpRequestExecution execution)
+      HttpRequest request, @NonNull byte[] body, ClientHttpRequestExecution execution)
       throws IOException {
 
     final OAuth2AccessToken accessToken = getOauth2AccessToken();
